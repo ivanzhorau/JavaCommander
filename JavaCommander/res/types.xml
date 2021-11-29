@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+    <type name = "" starter="ls"></type>
+    <type name = ".txt" starter="gedit"></type>
+    <type name = ".xml" starter="gedit"></type>
+    <type name = ".java" starter="gedit"></type>
+</types>

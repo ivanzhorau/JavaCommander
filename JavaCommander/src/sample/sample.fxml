@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ListView fx:id="LeftSide" layoutX="14.0" layoutY="41.0" onMouseReleased="#SelectedL" prefHeight="436.0" prefWidth="419.0" />
+      <ListView fx:id="RightSide" layoutX="543.0" layoutY="41.0" onMouseReleased="#SelectedR" prefHeight="436.0" prefWidth="419.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenL" prefHeight="26.0" prefWidth="92.0" text="Открыть" />
+      <TextField fx:id="LeftCom" layoutX="14.0" layoutY="477.0" prefHeight="26.0" prefWidth="357.0" text="/" />
+      <TextField fx:id="RightCom" layoutX="605.0" layoutY="477.0" prefHeight="26.0" prefWidth="357.0" text="/" />
+      <Button layoutX="868.0" layoutY="15.0" mnemonicParsing="false" onAction="#OpenR" prefHeight="26.0" prefWidth="92.0" text="Открыть" />
+      <Button layoutX="373.0" layoutY="477.0" mnemonicParsing="false" onAction="#BackL" text="Назад" />
+      <Button layoutX="543.0" layoutY="477.0" mnemonicParsing="false" onAction="#BackR" text="Назад" />
+      <Button layoutX="106.0" layoutY="15.0" mnemonicParsing="false" onAction="#CreateL" text="Создать" />
+      <Button layoutX="793.0" layoutY="15.0" mnemonicParsing="false" onAction="#CreateR" text="Создать" />
+      <Button layoutX="718.0" layoutY="14.0" mnemonicParsing="false" onAction="#DelR" text="Удалить" />
+      <Button layoutX="181.0" layoutY="15.0" mnemonicParsing="false" onAction="#DelL" text="Удалить" />
+      <TextField fx:id="NameL" layoutX="262.0" layoutY="15.0" />
+      <TextField fx:id="NameR" layoutX="543.0" layoutY="14.0" />
+      <Button layoutX="434.0" layoutY="40.0" mnemonicParsing="false" onAction="#Move" text="Переместить" />
+      <Button layoutX="434.0" layoutY="66.0" mnemonicParsing="false" onAction="#Copy" prefHeight="26.0" prefWidth="109.0" text="Копировать" />
+      <RadioButton fx:id="toLeft" layoutX="434.0" layoutY="18.0" mnemonicParsing="false" onAction="#Lclick" text="&lt;" />
+      <RadioButton fx:id="toRight" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="508.0" layoutY="19.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#Rclick" selected="true" text="&gt;" textOverrun="CLIP" />
+   </children>
+</AnchorPane>
